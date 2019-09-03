@@ -2,6 +2,8 @@
 ## Test Report
  Click [Test Report](/mochawesome-report/mochawesome.html) for detailed results.
 
+Please open html report with broswer.
+
 ## Issues
 
 * should be success when LOCAL CN with valid data without optional

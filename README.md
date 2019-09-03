@@ -161,7 +161,7 @@ If data-driven, user enable parameter:
 ```json
   {
         "name":"success when LOCAL US with valid data without optional",
-        "enable":true,                                      /// if true , this test will be run
+        "enable":true,                                      // if true , this test will be run
         "body":{
             "payment_method": "LOCAL",
             "bank_country_code": "US",
@@ -217,7 +217,7 @@ describe('add()', function() {
 More details: [mocha framework](https://github.com/mochajs/mocha/blob/master/README.md) ,
 
 
-#### How to encrpt request
+#### How to encrypt request
 For http protocol, you can extend HttpDriver and implement the encrpt method 
 
 #### How to set common headers
