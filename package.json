@@ -21,5 +21,10 @@
         "demo": "./node_modules/.bin/cross-env NODE_ENV=demo ./node_modules/.bin/mocha --require babel-register --reporter mochawesome--timeout 5000",
         "pre": "./node_modules/.bin/cross-env NODE_ENV=preview ./node_modules/.bin/mocha --require babel-register --reporter mochawesome --timeout 5000",
         "start": "JUNIT_REPORT_PATH=result/result.xml JUNIT_REPORT_STACK=1 ./node_modules/.bin/mocha --require babel-register --timeout 5000 --colors --reporter mocha-jenkins-reporter || true"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:jibingli/AirwallexApiTestingChallenge.git"
+    },
+    "license": "MIT"
 }
