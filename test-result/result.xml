@@ -1,0 +1,232 @@
+<testsuites name="Mocha Tests">
+  <testsuite name="Customers Info Tests collect customers bank info tests" tests="44" errors="0" failures="10" skipped="0" timestamp="2019-09-03T03:42:20" time="38.384">
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when LOCAL US with valid data without optional" time="1.038">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when account_name 2" time="0.972">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when account_name 10" time="0.505">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when US and account_number 1" time="0.867">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when US and account_number 17" time="0.917">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when LOCAL US with valid data and optional bsb &amp; swift_code" time="0.55">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when LOCAL AU with valid data without optional" time="0.51">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when LOCAL AU and account_number 6" time="0.984">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when LOCAL AU and account_number 9" time="1.023">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when LOCAL AU with valid data with optional swift_code &amp; aba" time="0.492">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when LOCAL CN with valid data without optional" time="0.839">
+      <failure message="expected 200 &quot;OK&quot;, got 400 &quot;Bad Request&quot;">    at Test._assertStatus (node_modules/.4.0.2@supertest/lib/test.js:268:12)
+    at Test._assertFunction (node_modules/.4.0.2@supertest/lib/test.js:283:11)
+    at Test.assert (node_modules/.4.0.2@supertest/lib/test.js:173:18)
+    at localAssert (node_modules/.4.0.2@supertest/lib/test.js:131:12)
+    at /Users/jibing/servicetesting/node_modules/.4.0.2@supertest/lib/test.js:128:5
+    at Test.Request.callback (node_modules/.3.8.3@superagent/lib/node/index.js:728:3)
+    at parser (node_modules/.3.8.3@superagent/lib/node/index.js:916:18)
+    at IncomingMessage.res.on (node_modules/.3.8.3@superagent/lib/node/parsers/json.js:19:7)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)</failure>
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when CN and account_number 8" time="1.02">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when CN and account_number 20" time="1.02">
+      <failure message="expected 200 &quot;OK&quot;, got 400 &quot;Bad Request&quot;">    at Test._assertStatus (node_modules/.4.0.2@supertest/lib/test.js:268:12)
+    at Test._assertFunction (node_modules/.4.0.2@supertest/lib/test.js:283:11)
+    at Test.assert (node_modules/.4.0.2@supertest/lib/test.js:173:18)
+    at localAssert (node_modules/.4.0.2@supertest/lib/test.js:131:12)
+    at /Users/jibing/servicetesting/node_modules/.4.0.2@supertest/lib/test.js:128:5
+    at Test.Request.callback (node_modules/.3.8.3@superagent/lib/node/index.js:728:3)
+    at parser (node_modules/.3.8.3@superagent/lib/node/index.js:916:18)
+    at IncomingMessage.res.on (node_modules/.3.8.3@superagent/lib/node/parsers/json.js:19:7)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)</failure>
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when LOCAL CN with valid data and optional bsb &amp; aba &amp; swift_code " time="0.92">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when SWIFT US with swift_code 8" time="0.498">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when SWIFT US with swift_code 11" time="0.946">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when SWIFT US with optional bsb" time="1.009">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when SWIFT AU with swift_code 8" time="0.56">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when SWIFT AU with optional aba" time="0.98">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when SWIFT CN with swift_code 11" time="1.023">
+      <failure message="expected 200 &quot;OK&quot;, got 400 &quot;Bad Request&quot;">    at Test._assertStatus (node_modules/.4.0.2@supertest/lib/test.js:268:12)
+    at Test._assertFunction (node_modules/.4.0.2@supertest/lib/test.js:283:11)
+    at Test.assert (node_modules/.4.0.2@supertest/lib/test.js:173:18)
+    at localAssert (node_modules/.4.0.2@supertest/lib/test.js:131:12)
+    at /Users/jibing/servicetesting/node_modules/.4.0.2@supertest/lib/test.js:128:5
+    at Test.Request.callback (node_modules/.3.8.3@superagent/lib/node/index.js:728:3)
+    at parser (node_modules/.3.8.3@superagent/lib/node/index.js:916:18)
+    at IncomingMessage.res.on (node_modules/.3.8.3@superagent/lib/node/parsers/json.js:19:7)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)</failure>
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be success when SWIFT CN with optional aba &amp; bsb" time="0.926">
+      <failure message="expected 200 &quot;OK&quot;, got 400 &quot;Bad Request&quot;">    at Test._assertStatus (node_modules/.4.0.2@supertest/lib/test.js:268:12)
+    at Test._assertFunction (node_modules/.4.0.2@supertest/lib/test.js:283:11)
+    at Test.assert (node_modules/.4.0.2@supertest/lib/test.js:173:18)
+    at localAssert (node_modules/.4.0.2@supertest/lib/test.js:131:12)
+    at /Users/jibing/servicetesting/node_modules/.4.0.2@supertest/lib/test.js:128:5
+    at Test.Request.callback (node_modules/.3.8.3@superagent/lib/node/index.js:728:3)
+    at parser (node_modules/.3.8.3@superagent/lib/node/index.js:916:18)
+    at IncomingMessage.res.on (node_modules/.3.8.3@superagent/lib/node/parsers/json.js:19:7)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)</failure>
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when US but no aba " time="1.012">
+      <failure message="expected 400 &quot;Bad Request&quot;, got 200 &quot;OK&quot;">    at Test._assertStatus (node_modules/.4.0.2@supertest/lib/test.js:268:12)
+    at Test._assertFunction (node_modules/.4.0.2@supertest/lib/test.js:283:11)
+    at Test.assert (node_modules/.4.0.2@supertest/lib/test.js:173:18)
+    at localAssert (node_modules/.4.0.2@supertest/lib/test.js:131:12)
+    at /Users/jibing/servicetesting/node_modules/.4.0.2@supertest/lib/test.js:128:5
+    at Test.Request.callback (node_modules/.3.8.3@superagent/lib/node/index.js:716:12)
+    at parser (node_modules/.3.8.3@superagent/lib/node/index.js:916:18)
+    at IncomingMessage.res.on (node_modules/.3.8.3@superagent/lib/node/parsers/json.js:19:7)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)</failure>
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when LOCAL US with no account_name" time="0.519">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when AU but no bsb" time="1.015">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when LOCAL AU but no account_number" time="0.527">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when LOCAL but no bank_country_code" time="2.043">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when no payment_method" time="0.909">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when SWIFT but no swift_code" time="0.547">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when SWIFT but swift_code is null" time="1.08">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when SWIFT but swift_code is invaild" time="0.562">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when US SWIFT but swift_code not US" time="0.871">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when SWIFT but swift_code 5" time="1.024">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when payment_method is invalid" time="1.023">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when bank_country_code is invalid" time="0.933">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when account_name 1" time="1.009">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when account_name 11" time="0.56">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when US account_number 0" time="0.507">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when US account_number 18" time="0.879">
+      <failure message="expected { error:
+   &apos;Length of account_number should be between 1 and 17 when bank_country_code is \&apos;US\&apos;&apos; } response body, got { error:
+   &apos;Length of account_number should be between 7 and 11 when bank_country_code is \&apos;US\&apos;&apos; }"> {
+-  &quot;error&quot;: &quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;
++  &quot;error&quot;: &quot;Length of account_number should be between 1 and 17 when bank_country_code is &apos;US&apos;&quot;
+ }
+
+   &apos;Length of account_number should be between 1 and 17 when bank_country_code is \&apos;US\&apos;&apos; } response body, got { error:
+   &apos;Length of account_number should be between 7 and 11 when bank_country_code is \&apos;US\&apos;&apos; }
+    at error (node_modules/.4.0.2@supertest/lib/test.js:301:13)
+    at Test._assertBody (node_modules/.4.0.2@supertest/lib/test.js:205:14)
+    at Test._assertFunction (node_modules/.4.0.2@supertest/lib/test.js:283:11)
+    at Test.assert (node_modules/.4.0.2@supertest/lib/test.js:173:18)
+    at localAssert (node_modules/.4.0.2@supertest/lib/test.js:131:12)
+    at /Users/jibing/servicetesting/node_modules/.4.0.2@supertest/lib/test.js:128:5
+    at Test.Request.callback (node_modules/.3.8.3@superagent/lib/node/index.js:728:3)
+    at parser (node_modules/.3.8.3@superagent/lib/node/index.js:916:18)
+    at IncomingMessage.res.on (node_modules/.3.8.3@superagent/lib/node/parsers/json.js:19:7)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)</failure>
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when CN and account_number 7" time="0.544">
+      <failure message="expected 400 &quot;Bad Request&quot;, got 200 &quot;OK&quot;">    at Test._assertStatus (node_modules/.4.0.2@supertest/lib/test.js:268:12)
+    at Test._assertFunction (node_modules/.4.0.2@supertest/lib/test.js:283:11)
+    at Test.assert (node_modules/.4.0.2@supertest/lib/test.js:173:18)
+    at localAssert (node_modules/.4.0.2@supertest/lib/test.js:131:12)
+    at /Users/jibing/servicetesting/node_modules/.4.0.2@supertest/lib/test.js:128:5
+    at Test.Request.callback (node_modules/.3.8.3@superagent/lib/node/index.js:716:12)
+    at parser (node_modules/.3.8.3@superagent/lib/node/index.js:916:18)
+    at IncomingMessage.res.on (node_modules/.3.8.3@superagent/lib/node/parsers/json.js:19:7)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)</failure>
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when CN and account_number 21" time="0.983">
+      <failure message="expected { error:
+   &apos;Length of account_number should be between 8 and 20 when bank_country_code is \&apos;CN\&apos;&apos; } response body, got { error:
+   &apos;Length of account_number should be between 7 and 11 when bank_country_code is \&apos;US\&apos;&apos; }"> {
+-  &quot;error&quot;: &quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;
++  &quot;error&quot;: &quot;Length of account_number should be between 8 and 20 when bank_country_code is &apos;CN&apos;&quot;
+ }
+
+   &apos;Length of account_number should be between 8 and 20 when bank_country_code is \&apos;CN\&apos;&apos; } response body, got { error:
+   &apos;Length of account_number should be between 7 and 11 when bank_country_code is \&apos;US\&apos;&apos; }
+    at error (node_modules/.4.0.2@supertest/lib/test.js:301:13)
+    at Test._assertBody (node_modules/.4.0.2@supertest/lib/test.js:205:14)
+    at Test._assertFunction (node_modules/.4.0.2@supertest/lib/test.js:283:11)
+    at Test.assert (node_modules/.4.0.2@supertest/lib/test.js:173:18)
+    at localAssert (node_modules/.4.0.2@supertest/lib/test.js:131:12)
+    at /Users/jibing/servicetesting/node_modules/.4.0.2@supertest/lib/test.js:128:5
+    at Test.Request.callback (node_modules/.3.8.3@superagent/lib/node/index.js:728:3)
+    at parser (node_modules/.3.8.3@superagent/lib/node/index.js:916:18)
+    at IncomingMessage.res.on (node_modules/.3.8.3@superagent/lib/node/parsers/json.js:19:7)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)</failure>
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when AU and bsb not 6" time="0.547">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when US and aba not 9" time="2.008">
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when AU and account_number 5" time="1.023">
+      <failure message="expected { error:
+   &apos;Length of account_number should be between 6 and 9 when bank_country_code is \&apos;AU\&apos;&apos; } response body, got { error:
+   &apos;Length of account_number should be between 7 and 11 when bank_country_code is \&apos;US\&apos;&apos; }"> {
+-  &quot;error&quot;: &quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;
++  &quot;error&quot;: &quot;Length of account_number should be between 6 and 9 when bank_country_code is &apos;AU&apos;&quot;
+ }
+
+   &apos;Length of account_number should be between 6 and 9 when bank_country_code is \&apos;AU\&apos;&apos; } response body, got { error:
+   &apos;Length of account_number should be between 7 and 11 when bank_country_code is \&apos;US\&apos;&apos; }
+    at error (node_modules/.4.0.2@supertest/lib/test.js:301:13)
+    at Test._assertBody (node_modules/.4.0.2@supertest/lib/test.js:205:14)
+    at Test._assertFunction (node_modules/.4.0.2@supertest/lib/test.js:283:11)
+    at Test.assert (node_modules/.4.0.2@supertest/lib/test.js:173:18)
+    at localAssert (node_modules/.4.0.2@supertest/lib/test.js:131:12)
+    at /Users/jibing/servicetesting/node_modules/.4.0.2@supertest/lib/test.js:128:5
+    at Test.Request.callback (node_modules/.3.8.3@superagent/lib/node/index.js:728:3)
+    at parser (node_modules/.3.8.3@superagent/lib/node/index.js:916:18)
+    at IncomingMessage.res.on (node_modules/.3.8.3@superagent/lib/node/parsers/json.js:19:7)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)</failure>
+    </testcase>
+    <testcase classname="Customers Info Tests collect customers bank info tests" name="post /bank should be failure when AU and account_number 10" time="0.612">
+      <failure message="expected { error:
+   &apos;Length of account_number should be between 6 and 9 when bank_country_code is \&apos;AU\&apos;&apos; } response body, got { error:
+   &apos;Length of account_number should be between 7 and 11 when bank_country_code is \&apos;US\&apos;&apos; }"> {
+-  &quot;error&quot;: &quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;
++  &quot;error&quot;: &quot;Length of account_number should be between 6 and 9 when bank_country_code is &apos;AU&apos;&quot;
+ }
+
+   &apos;Length of account_number should be between 6 and 9 when bank_country_code is \&apos;AU\&apos;&apos; } response body, got { error:
+   &apos;Length of account_number should be between 7 and 11 when bank_country_code is \&apos;US\&apos;&apos; }
+    at error (node_modules/.4.0.2@supertest/lib/test.js:301:13)
+    at Test._assertBody (node_modules/.4.0.2@supertest/lib/test.js:205:14)
+    at Test._assertFunction (node_modules/.4.0.2@supertest/lib/test.js:283:11)
+    at Test.assert (node_modules/.4.0.2@supertest/lib/test.js:173:18)
+    at localAssert (node_modules/.4.0.2@supertest/lib/test.js:131:12)
+    at /Users/jibing/servicetesting/node_modules/.4.0.2@supertest/lib/test.js:128:5
+    at Test.Request.callback (node_modules/.3.8.3@superagent/lib/node/index.js:728:3)
+    at parser (node_modules/.3.8.3@superagent/lib/node/index.js:916:18)
+    at IncomingMessage.res.on (node_modules/.3.8.3@superagent/lib/node/parsers/json.js:19:7)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

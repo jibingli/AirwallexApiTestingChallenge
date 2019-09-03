@@ -1,0 +1,797 @@
+[
+    {
+        "name":"success when LOCAL US with valid data without optional",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "US",
+            "account_name": "AN12345",
+            "account_number": "a(2ABC.1",
+            "aba": "123456789"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when account_name 2",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "US",
+            "account_name": "AN",
+            "account_number": "1234567",
+            "aba": "123456789"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when account_name 10",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "US",
+            "account_name": "AN!@#$z123",
+            "account_number": "1234567",
+            "aba": "123456789"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when US and account_number 1",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "US",
+            "account_name": "AN1123",
+            "account_number": "0",
+            "aba": "123456789"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when US and account_number 17",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "US",
+            "account_name": "AN1123",
+            "account_number": "abcdefg!@#$%12345",
+            "aba": "123456789"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when LOCAL US with valid data and optional bsb & swift_code",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "US",
+            "account_name": "AN12345",
+            "account_number": "a(2ABC.1",
+            "aba": "123456789",
+            "swift_code":"swifUScode",
+            "bsb":"bsbbsb"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when LOCAL AU with valid data without optional",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "AU",
+            "account_name": "AN12345",
+            "account_number": "123OPI00",
+            "bsb":"bsbbsb"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when LOCAL AU and account_number 6",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "AU",
+            "account_name": "AN12345",
+            "account_number": "123456",
+            "bsb":"bsbbsb"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when LOCAL AU and account_number 9",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "AU",
+            "account_name": "AN12345",
+            "account_number": "QWE123!@#",
+            "bsb":"bsbbsb"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when LOCAL AU with valid data with optional swift_code & aba",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "AU",
+            "account_name": "AN12345",
+            "account_number": "123OPI00",
+            "bsb":"bsbbsb",
+            "aba": "123456789",
+            "swift_code":"swifAUcode"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when LOCAL CN with valid data without optional",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "CN",
+            "account_name": "James li",
+            "account_number": "QWEqwe123456"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when CN and account_number 8",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "CN",
+            "account_name": "James li",
+            "account_number": "12345678"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when CN and account_number 20",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "CN",
+            "account_name": "James li",
+            "account_number": "qwert98765!@#)/POIUY"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when LOCAL CN with valid data and optional bsb & aba & swift_code ",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "CN",
+            "account_name": "James li",
+            "account_number": "a2345678",
+            "bsb":"bsbbsb",
+            "aba": "123456789",
+            "swift_code":"swifCNcode"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when SWIFT US with swift_code 8",
+        "enable":true,
+        "body":{
+            "payment_method": "SWIFT",
+            "bank_country_code": "US",
+            "account_name": "James li",
+            "account_number": "QWEqwe123456",
+            "swift_code":"ICBKUSBJ",
+            "aba": "abcdefghi"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when SWIFT US with swift_code 11",
+        "enable":true,
+        "body":{
+            "payment_method": "SWIFT",
+            "bank_country_code": "US",
+            "account_name": "James li",
+            "account_number": "QWEqwe123456",
+            "swift_code":"ICBKUSBJAAA",
+            "aba": "abcdefghi"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when SWIFT US with optional bsb",
+        "enable":true,
+        "body":{
+            "payment_method": "SWIFT",
+            "bank_country_code": "US",
+            "account_name": "James li",
+            "account_number": "QWEqwe123456",
+            "swift_code":"ICBKUSBJAAA",
+            "aba": "abcdefghi",
+            "bsb": "123456"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when SWIFT AU with swift_code 8",
+        "enable":true,
+        "body":{
+            "payment_method": "SWIFT",
+            "bank_country_code": "AU",
+            "account_name": "James li",
+            "account_number": "1234567",
+            "swift_code":"ICBKAUBJ",
+            "bsb": "basbsb"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when SWIFT AU with optional aba",
+        "enable":true,
+        "body":{
+            "payment_method": "SWIFT",
+            "bank_country_code": "AU",
+            "account_name": "James li",
+            "account_number": "1234567",
+            "swift_code":"ICBKAUBJAAA",
+            "bsb": "basbsb",
+            "aba":"abcdefghi"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when SWIFT CN with swift_code 11",
+        "enable":true,
+        "body":{
+            "payment_method": "SWIFT",
+            "bank_country_code": "CN",
+            "account_name": "James li",
+            "account_number": "QWEqwe123456",
+            "swift_code":"ICBKCNBJ123"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"success when SWIFT CN with optional aba & bsb",
+        "enable":true,
+        "body":{
+            "payment_method": "SWIFT",
+            "bank_country_code": "CN",
+            "account_name": "James li",
+            "account_number": "QWEqwe123456",
+            "swift_code":"ICBCCNBJ",
+            "bsb": "basbsb",
+            "aba":"abcdefghi"
+        },
+        "expect":{
+            "status_code":200,
+            "body":{
+                "success": "Bank details saved"
+            }
+        }
+    },
+    {
+        "name":"failure when US but no aba ",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "US",
+            "account_name": "AN12345",
+            "account_number": "a(2ABC.1"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "'aba' is required when bank country code is 'US'"
+            }
+        }
+    },
+    {    
+        "name":"failure when LOCAL US with no account_name",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "US",
+            "account_number": "a(2ABC.1",
+            "aba": "123456789"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "'account_name' is required"
+            }
+        }
+    },
+    {
+        "name":"failure when AU but no bsb",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "AU",
+            "account_name": "AN12345",
+            "account_number": "123OPI00"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "'bsb' is required when bank country code is 'AU'"
+            }
+        }
+    },
+    {
+        "name":"failure when LOCAL AU but no account_number",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "AU",
+            "account_name": "AN12345",
+            "bsb":"bsbbsb"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "'account_number' is required"
+            }
+        }
+    },
+    {
+        "name":"failure when LOCAL but no bank_country_code",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "account_name": "James li",
+            "account_number": "12345678"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "'bank_country_code' is required, and should be one of 'US', 'AU', or 'CN'"
+            }
+        }
+    },
+    {
+        "name":"failure when no payment_method",
+        "enable":true,
+        "body":{
+            "bank_country_code": "US",
+            "account_name": "James li",
+            "account_number": "QWEqwe123456",
+            "swift_code":"ICBKUSBJ",
+            "aba": "abcdefghi"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "'payment_method' field required, the value should be either 'LOCAL' or 'SWIFT'"
+            }
+        }
+    },
+    {
+        "name":"failure when SWIFT but no swift_code",
+        "enable":true,
+        "body":{
+            "payment_method": "SWIFT",
+            "bank_country_code": "US",
+            "account_name": "James li",
+            "account_number": "QWEqwe123456",
+            "aba": "abcdefghi"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "'swift_code' is required when payment method is 'SWIFT'"
+            }
+        }
+    },
+    {
+        "name":"failure when SWIFT but swift_code is null",
+        "enable":true,
+        "body":{
+            "payment_method": "SWIFT",
+            "bank_country_code": "US",
+            "account_name": "James li",
+            "account_number": "QWEqwe123456",
+            "swift_code":"",
+            "aba": "abcdefghi"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "'swift_code' is required when payment method is 'SWIFT'"
+            }
+        }
+    },
+    {
+        "name":"failure when SWIFT but swift_code is invaild",
+        "enable":true,
+        "body":{
+            "payment_method": "SWIFT",
+            "bank_country_code": "US",
+            "account_name": "James li",
+            "account_number": "QWEqwe123456",
+            "swift_code":"12345678",
+            "aba": "abcdefghi"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "The swift code is not valid for the given bank country code: US"
+            }
+        }
+    },
+    {
+        "name":"failure when US SWIFT but swift_code not US",
+        "enable":true,
+        "body":{
+            "payment_method": "SWIFT",
+            "bank_country_code": "US",
+            "account_name": "James li",
+            "account_number": "QWEqwe123456",
+            "swift_code":"ICBCCNBJ",
+            "aba": "abcdefghi"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "The swift code is not valid for the given bank country code: US"
+            }
+        }
+    },
+    {
+        "name":"failure when SWIFT but swift_code 5",
+        "enable":true,
+        "body":{
+            "payment_method": "SWIFT",
+            "bank_country_code": "US",
+            "account_name": "James li",
+            "account_number": "QWEqwe123456",
+            "swift_code":"US",
+            "aba": "abcdefghi"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "Length of 'swift_code' should be either 8 or 11"
+            }
+        }
+    },
+    {
+        "name":"failure when payment_method is invalid",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCALLLLLLDDL",
+            "bank_country_code": "US",
+            "account_name": "AN12345",
+            "account_number": "a(2ABC.1",
+            "aba": "123456789"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "'payment_method' field required, the value should be either 'LOCAL' or 'SWIFT'"
+            }
+        }
+    },
+    {
+        "name":"failure when bank_country_code is invalid",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "USUSSSSS",
+            "account_name": "AN12345",
+            "account_number": "a(2ABC.1",
+            "aba": "123456789"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "'bank_country_code' is required, and should be one of 'US', 'AU', or 'CN'"
+            }
+        }
+    },
+    {
+        "name":"failure when account_name 1",
+        "enable":true,
+        "body":{
+            "payment_method": "SWIFT",
+            "bank_country_code": "US",
+            "account_name": "J",
+            "account_number": "QWEqwe123456",
+            "swift_code":"ICBKUSBJ",
+            "aba": "abcdefghi"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "Length of account_name should be between 2 and 10"
+            }
+        }
+    },
+    {
+        "name":"failure when account_name 11",
+        "enable":true,
+        "body":{
+            "payment_method": "SWIFT",
+            "bank_country_code": "US",
+            "account_name": "James James",
+            "account_number": "QWEqwe123456",
+            "swift_code":"ICBKUSBJ",
+            "aba": "abcdefghi"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "Length of account_name should be between 2 and 10"
+            }
+        }
+    },
+    {
+        "name":"failure when US account_number 0",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "US",
+            "account_name": "AN1123",
+            "account_number": "",
+            "aba": "123456789"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "'account_number' is required"
+            }
+        }
+    },
+    {
+        "name":"message Length of account_number should be between 1 and 17 when bank_country_code is 'US' when US account_number 18",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "US",
+            "account_name": "AN1123",
+            "account_number": "1234567890qwertyui",
+            "aba": "123456789"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "Length of account_number should be between 1 and 17 when bank_country_code is 'US'"
+            }
+        }
+    },
+    {
+        "name":"failure when CN and account_number 7",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "CN",
+            "account_name": "James li",
+            "account_number": "123456t"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "Length of account_number should be between 8 and 20 when bank_country_code is 'CN'"
+            }
+        }
+    },
+    {
+        "name":"message Length of account_number should be between 8 and 20 when bank_country_code is 'CN' when CN and account_number 21",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "CN",
+            "account_name": "James li",
+            "account_number": "1234567890qwertyuiop1"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "Length of account_number should be between 8 and 20 when bank_country_code is 'CN'"
+            }
+        }
+    },
+    {
+        "name":"failure when AU and bsb not 6",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "AU",
+            "account_name": "AN12345",
+            "account_number": "123OPI00",
+            "bsb":"bsb"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "Length of 'bsb' should be 6"
+            }
+        }
+    },
+    {
+        "name":"message Length of 'bsb' should be 6 when AU and bsb is ''",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "AU",
+            "account_name": "AN12345",
+            "account_number": "123OPI00",
+            "bsb":""
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "Length of 'bsb' should be 6"
+            }
+        }
+    },
+    {
+        "name":"failure when US and aba not 9",
+        "enable":true,
+        "body":{
+            "payment_method": "SWIFT",
+            "bank_country_code": "US",
+            "account_name": "James li",
+            "account_number": "QWEqwe123456",
+            "swift_code":"ICBKUSBJ",
+            "aba": "123"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "Length of 'aba' should be 9"
+            }
+        }
+    },
+    {
+        "name":"failure when US and aba is ''",
+        "enable":true,
+        "body":{
+            "payment_method": "SWIFT",
+            "bank_country_code": "US",
+            "account_name": "James li",
+            "account_number": "QWEqwe123456",
+            "swift_code":"ICBKUSBJ",
+            "aba": ""
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "Length of 'aba' should be 9"
+            }
+        }
+    },
+    {
+        "name":"message Length of account_number should be between 6 and 9 when bank_country_code is 'AU' when AU and account_number 5",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "AU",
+            "account_name": "AN12345",
+            "account_number": "12345",
+            "bsb":"bsbbsb"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "Length of account_number should be between 6 and 9 when bank_country_code is 'AU'"
+            }
+        }
+    },
+    {
+        "name":"message Length of account_number should be between 6 and 9 when bank_country_code is 'AU' when AU and account_number 10",
+        "enable":true,
+        "body":{
+            "payment_method": "LOCAL",
+            "bank_country_code": "AU",
+            "account_name": "AN12345",
+            "account_number": "1234567890",
+            "bsb":"bsbbsb"
+        },
+        "expect":{
+            "status_code":400,
+            "body":{
+                "error": "Length of account_number should be between 6 and 9 when bank_country_code is 'AU'"
+            }
+        }
+    }
+
+]
